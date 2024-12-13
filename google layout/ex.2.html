@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Shortcut Modal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1e1e2f;
+        }
+        .hover-box {
+            text-align: center;
+            color: white;
+            cursor: pointer;
+        }
+        .hover-box .image {
+            width: 50px;
+            height: 50px;
+            background-color: #282a36;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hover-box img {
+            width: 20px;
+            height: 20px;
+        }
+       
+        #m {
+            display: none;
+        }
+        
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        #myModal:checked + .modal {
+            display: flex;
+        }
+        .modal-content {
+            background-color: #222222;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            color: white;
+        }
+        .modal-content input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+        .modal-content .buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .modal-content label {
+            margin-left: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .cancel {
+            background-color: #555;
+            color: white;
+        }
+        .done {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hover-box">
+    <div class="image">
+        <label for="modalToggle">
+            <img src="images/plus-solid.svg" alt="Add Shortcut">
+        </label>
+    </div>
+    <p class="mt-3">Add shortcut</p>
+</div>
+
+<!-- Hidden checkbox to toggle modal -->
+<input type="checkbox" id="modalToggle">
+
+<div class="modal">
+    <div class="modal-content">
+        <h2>Add Shortcut</h2>
+        <input type="text" placeholder="Name">
+        <input type="url" placeholder="URL">
+        <div class="buttons">
+            <label for="modalToggle" class="cancel">Cancel</label>
+            <label for="modalToggle" class="done">Done</label>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

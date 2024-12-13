@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" sizes="20x20" href="images/chrome-brands-solid.svg">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+        </div>
+        <div class="header-right">
+            <a href="https://mail.google.com/" target="_blank">Gmail</a>
+            <a href="https://www.google.com/imghp" target="_blank">Images</a>
+
+            <div class="dropdown apps">
+                <button class="btn p-0 border-0" id="appsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="dots" focusable="false" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+                            fill="#5f6368"></path>
+                    </svg>
+                </button>
+                <div class="tooltip-label tooltip-apps">Google Apps</div>
+                <div class="dropdown-menu dropdown-menu-end bg-dark p-3 shadow scrollable-dropdown"
+                    aria-labelledby="appsDropdown">
+                    <div class="app-grid">
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Account">
+                            <p class="text-white">You Tube</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Gmail">
+                            <p class="text-white">Account</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Drive">
+                            <p class="text-white">Account</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Classroom">
+                            <p class="text-white">Account</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Docs">
+                            <p class="text-white">Account</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Sheets">
+                            <p class="text-white">Account</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Slides">
+                            <p class="text-white">Account</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Calendar">
+                            <p class="text-white">Account</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Chat">
+                            <p class="text-white">Account</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Meet">
+                            <p class="text-white">Account</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Forms">
+                            <p class="text-white">Account</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Sites">
+                            <p class="text-white">Account</p>
+                        </a>
+                        <a href="#" class="app-icon">
+                            <img src="images/youtube-logo-hd-8.png" alt="Sites">
+                            <p class="text-white">Account</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn p-0 border-0 profile" id="profileDropdown" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div class="profile-box">
+                        <img src="images/accountname.png" alt="Profile Image">
+                        <div class=" profile-label text-white fw-bold">
+                            <div>Google Account</div>
+                            <div class="text-secondary fw-bold">Aashika B CSE</div>
+                            <div class="text-secondary fw-bold">aashikab.cse2023@citchennai.net</div>
+                        </div>
+                    </div>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end p-3 dropdown-menu-dark" aria-labelledby="profileDropdown">
+
+                    <div class="dropdown-header">
+                        <p class="text-white mb-1  ">aashikab.cse2023@citchennai.net </p>
+                        <p class="text-white mb-2">Managed by citchennai.net</p>
+
+                        <div class="profile-container">
+                            <img src="images/accountname.png" alt="Profile Image">
+                            <div class="edit-icon">
+                                <img src="images/pen-solid.svg" alt="Edit">
+                            </div>
+                        </div>
+                        <h5 class="mt-2 mb-1 text-white">Hi, Aashika B!</h5>
+
+                        <button class="btn btn-outline-light manage-button">Manage your Google Account</button>
+
+                    </div>
+                    <div class="button-group">
+                        <button class="btn-custom">
+                            <img src="images/blueplus.svg" alt="Add Icon"> Add account
+                        </button>
+                        <button class="btn-custom">
+                            <img src="images/arrow-right-from-bracket-solid.svg" alt="Sign Out Icon"> Sign out
+                        </button>
+                    </div>
+                    <div class="mt-2 text-center privacy-links">
+                        <a>Privacy Policy </a> · <a> Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+      <div class="content">
+        <div class="d-flex justify-content-center google-image">
+            <div class="logo"></div>
+        </div>
+
+        <div class="container search-bar-container">
+            <div class="search-icon">
+                <img src="images/search.svg" alt="Search">
+            </div>
+            <input type="text" class="form-control search-bar" placeholder="Search Google or type a URL"
+                aria-label="Search">
+            <div class="search-tools">
+                <div>
+                    <img src="images/mic.svg" alt="Mic">
+                    <div class="tooltip-label mic-label tooltip-color">Search by voice</div>
+                </div>
+                <div>
+                    <img src="images/camera.svg" alt="Camera">
+                    <div class="tooltip-label camera-label tooltip-color">Search by image</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-center shortcut-links">
+
+            <div class="text-center shortcut">
+                <div class="hover-box">
+                    <div class="three-dots">
+                        <img src="images/three-dots-vertical.svg" alt="Menu">
+                    </div>
+                    <div class="image d-flex align-items-center justify-content-center">
+                        <img src="images/classroom.png" alt="Classroom">
+                    </div>
+                    <p class="mt-3">Classroom</p>
+                </div>
+            </div>
+
+            <div class="text-center shortcut">
+                <div class="hover-box">
+                    <div class="three-dots">
+                        <img src="images/three-dots-vertical.svg" alt="Menu">
+                    </div>
+                    <div class="image d-flex align-items-center justify-content-center">
+                        <img src="images/github.png" alt="Github">
+                    </div>
+                    <p class="mt-3">Github</p>
+                </div>
+            </div>
+
+
+            <div class="text-center shortcut">
+                <div class="hover-box" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <div class="image d-flex align-items-center justify-content-center">
+
+                        <img src="images/plus-solid.svg" alt="Add Shortcut">
+
+                        <!-- <div class="modal" id="myModal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-white">Add Shortcut</h4>
+                                    </div>
+
+                                    <div class="modal-body">
+                                       Name
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                           
+                        </div> -->
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="heading">
+                                    <p>Add Shortcut</p></div>
+                                    <label for="fname">Name</label><br>
+                                    <input type="text" id="fname" name="fname"><br>
+                                    <label for="urlname">URL</label><br>
+                                    <input type="text" id="urlname" name="urlname"><br>
+                                    <div class="buttons">
+                                        <button type="button" 
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button"
+                                            data-bs-dismiss="modal">Done</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <p class="mt-3">Add shortcut</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class="customize-btn">
+                <div class="icon-container">
+                    <img src="images/icon_pencil.svg">
+                </div>
+                <div class="text-container">
+                    Customize Chrome
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
